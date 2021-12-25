@@ -1,15 +1,15 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
+const player = {
+  name: "nico",
+  points: 10,
+  fat: true,
+};
 
-const num = [1, 2, "hello", false, 5, null, undefined, "", "nico", 10];
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
 
-console.log(daysOfWeek[2]);
-console.log(num);
+player.fat = false;
+console.log(player);
 
-console.log(daysOfWeek);
-daysOfWeek.push("sun");
-console.log(daysOfWeek);
-daysOfWeek.pop();
-console.log(daysOfWeek);
-
-const toBuy = ["potato", "tomato", "pizza"];
-console.log(toBuy[999]);
+player.lastName = "potato";
+console.log(player);
