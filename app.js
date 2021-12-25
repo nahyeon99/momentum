@@ -1,30 +1,23 @@
-// 1
-function sayHello(name, age) {
-  console.log("Hello my name is ", name, " My age is", age);
-}
-
-sayHello("nahyeon", 23);
-
-// 2
-function plus(a, b) {
-  return a + b;
-}
-
-function devide(a, b) {
-  return a / b;
-}
-
-console.log(plus(2, 3));
-console.log(devide(40, 2));
-
-// 3
-const player = {
-  name: "nahyeon",
-  sayHi: function (name) {
-    console.log("hi ", name, " nice to meet you!");
+const calculator = {
+  add: function (a, b) {
+    return a + b;
+  },
+  minus: function (a, b) {
+    return a - b;
+  },
+  multiplay: function (a, b) {
+    return a * b;
+  },
+  devide: function (a, b) {
+    return a / b;
+  },
+  power: function (a, b) {
+    return a ** b;
   },
 };
 
-console.log(player.name);
-player.sayHi("hy");
-player.sayHi("hyeon");
+console.log(calculator.add(2, 3));
+console.log(calculator.minus(2, 3));
+console.log(calculator.multiplay(2, 3));
+console.log(calculator.devide(2, 3));
+console.log(calculator.power(2, 3));
