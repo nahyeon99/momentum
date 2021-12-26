@@ -1,13 +1,3 @@
-const age = parseInt(prompt("how old are you?"));
-
-if (isNaN(age) || age < 0) {
-  console.log("Please write a real positive number");
-} else if (age < 18) {
-  console.log("You are too young");
-} else if (age >= 18 && age <= 50) {
-  console.log("you can drink");
-} else if (age > 50 && age <= 80) {
-  console.log("you should exercise");
-} else {
-  console.log("do whatever you want");
-}
+const title = document.getElementById("title");
+title.innerHTML = "Get you!";
+console.log(title.className);
