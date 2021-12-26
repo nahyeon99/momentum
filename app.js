@@ -1,11 +1,8 @@
-// const title = document.getElementsByTagName("h1");
-// console.log(title);
+e.addEventListener("click", handleTitleclick);
 
-// title = document.getElementsByClassName("hello");
-// console.log(title);
-
-// const title = document.querySelector(".hello h1");
-// console.log(title);
-
-const title = document.querySelectorAll(".hello h1");
-console.log(title);
+const title = document.querySelector("div.hello:first-child h1");
+title.style.color = "blue";
+function handleTitleClick() {
+  console.log("title was clicked");
+}
+title.addEventListener("click", handleTitleClick);
